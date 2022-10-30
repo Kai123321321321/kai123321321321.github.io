@@ -209,6 +209,10 @@ audio{
     background-color: lightgray;
     color: #333;
 }
+.text-flex{
+    font-size: 16px;
+    font-weight: 600;
+}
 /* About开始 ----------------------------- */
 /* About ----------------------------- */
 /* About ----------------------------- */

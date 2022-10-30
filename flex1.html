@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="/css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:1100px)" href="/css/widescreen.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <title>弹性盒子项目练习</title>
+</head>
+<body>
+    <nav id="navbar">
+        <h1 class="logo">
+            <span class="text-primary">
+            <i class="fas fa-book-open"></i></span>
+            米修在线
+        </h1>
+        <ul>
+            <li><a href="index.html">返回首页</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- header:home -->
+    <header id="home">
+        <div class="home-content">
+            <h1 class="l-heading">欢迎来到米修在线</h1>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, aut tempore sequi repudiandae quo repellat.</p>
+            <a href="" class="btn">阅读更多</a>
+            <h2 class="paddingy-1"><i class="fa-solid fa-music fa-2x icolor"></i>BOW-MFS</h2>
+            
+            <audio controls src="/music/Bow.mp3" autoplay="autoplay"></audio>
+        </div>
+    </header>
+    <!-- seciton What We Do -->
+    <section id="what" class="bg-light paddingy-1">
+        <div class="container">
+            <h2 class="m-heading text-center"><span class="text-primary">What</span> We Do</h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-university fa-2x"></i>
+                    <h3>前端基础课程</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius.</p>
+                </div> 
+                <div class="item">
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <h3>前端进阶课程</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius.</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <h3>前端高阶课程</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section:who we are -->
+    <section id="who">
+        <div class="who-img"></div>
+        <div class="who-text bg-dark padding-1">
+            <h2 class="m-heading">
+                <span class="text-primary">Who</span> We Are
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus provident numquam vitae saepe sapiente eveniet doloremque perferendis, repellendus soluta dolorem illo odit veritatis accusamus eum deserunt ut? Id, ipsum!</p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <li>Mark Smith:Ceo</li>
+                <li>Shannon Johnson:Cfo</li>
+                <li>John Corbit:Lead Acoountant</li>
+                <li>Janet Williams </li>
+                <li>Janet Williams</li>
+            </ul>
+        </div>
+    </section>
+    <!-- section:Clients -->
+    <section id="clients" class="paddingy-1">
+            <div class="container">
+                <h2 class="m-heading text-center">
+                    <span class="text-primary">Our</span>  Clients
+                </h2>
+                <div class="items paddingy-1">
+                    <div><img src="/img/logo.jpg" alt="图片显示出错"></div>
+                    <div><img src="/img/logo.jpg" alt="图片显示出错"></div>
+                    <div><img src="/img/logo.jpg" alt="图片显示出错"></div>
+                    <div><img src="/img/logo.jpg" alt="图片显示出错"></div>
+                    <div><img src="/img/logo.jpg" alt="图片显示出错"></div>
+                </div>
+            </div>
+    </section>
+    <!-- sec                                                                                                                                                                                                                                                                                                                                                            tion:contact us -->
+    <section id="contact">
+        <div class="contact-form bg-primary padding-1">
+            <h2 class="m-heading">Contact Us</h2>
+            <p>如有疑问请填写以下信息联系我们!</p>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" name="name" id="name" placeholder="请输入姓名">
+                </div>
+                <div class="form-group">
+                    <label for="name">邮箱</label>
+                    <input type="email" name="email" id="email" placeholder="请输入邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="phone">电话</label>
+                    <input type="text" name="phone" id="phone" placeholder="请输入电话">
+                </div>
+                <div class="form-group">
+                    <label for="message">反馈信息</label>
+                    <textarea name="message" id="message" placeholder="反馈信息"></textarea>
+                </div>
+            </form>
+            <input type="sumbit" value="提交" class="text-center btn btn-dark">
+        </div>
+        <div class="contact-img"></div>
+    </section>
+    <!-- footer -->
+    <footer id="main-footer" class="bg-dark text-center padding-1">
+        <div class="container">
+            <p>Copyright&copy;2021,All Rights Reserveds</p>
+        </div>
+    </footer>
+</body>
+</html>
