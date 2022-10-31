@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <title>Document</title>
+    <style>
+        p{
+            color: #444;
+        }
+        a{
+            color: white;
+        }
+        .black-nav{
+            width: 100%;
+            height: 40px;
+            background-color: #444;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            
+        }
+        .black-nav .warp{
+            width: 1226px;
+            margin: 0 auto;
+        }
+        .black-nav div ul li{
+            float: left;
+            text-align: ;
+        }
+        .black-nav .warp .span1{
+            margin: 0 5px;
+        }
+        .black-nav .warp ul .abc {
+            position: relative;
+        }
+        .black-nav .warp ul .abc a {
+            text-shadow: 0 2px 3px lightgray;
+        }
+        .black-nav .warp ul .abc a:hover{
+            color: white;
+        }
+        .black-nav .warp .download{
+            position: absolute;
+            width: 124px;
+            height: 0;
+            top: 40px;
+            left: 50%;
+            margin-left: -62px;
+            background-color: #f4f4f4;
+            box-shadow: 0 1px 5px #aaa;
+            overflow: hidden;
+            transition: all .5s;
+        }
+        .black-nav .warp ul .abc:hover>.download{
+            height: 124px;
+        }
+        .black-nav .warp .download img{
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <nav class="black-nav">
+        <div class="warp">
+        <ul>
+            <li>123<span class="span1">|</span></li>
+            <li>321<span class="span1">|</span></li>
+            <li class="abc"><a href="">小米商城APP </a><span class="span1">|</span>
+                <div class="download">
+                    <img src="/images/download.png" alt="">
+                    <p>小米商城APP</p>
+                </div>
+            </li>
+            <li>321<span class="span1">|</span></li>
+            <li>31p<span class="span1">|</span></li>
+            <li>233<span class="span1">|</span></li>
+        </ul>
+    </div>
+    </nav>
+</body>
+</html>

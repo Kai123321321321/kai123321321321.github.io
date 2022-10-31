@@ -9,9 +9,134 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- 字体图标样式 -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <!-- iconfont图标样式 -->
+    <link rel="stylesheet" href="/font_28jzvmloisa/iconfont.css">
     <title>首页</title>
     <style>
+        #features .wxbox .wximg img{
+            width: 100%;
+        }
+        #features .wxbox h3{
+            position: relative;
+        }
+        #features .wxbox .wximg{
+            box-shadow: 0 1px 5px black;
+            position: absolute;
+            overflow: hidden;
+            width: 124px;
+            height: 0;
+            top: 40px;
+            left: 50%;
+            margin-left: -62px;
+            transition: all .5S;
+        }
+        #features .wxbox h3:hover .wximg{
+            height: 124px;
+        }
+        #features .wxbox .border1{
+            border-bottom: 2px solid black;
+            height: 1px;
+            box-shadow:0px 1px 2px hsla(194, 88%, 68%, 0.8);
+            width: 100px;
+            left: 50%;
+            margin-left: -50px;
+            position: absolute;
+            z-index: 2;
+        }
+        /* 三角形，太丑了没用 */
+        /* #features .text-a .triangle{
+            position: absolute;
+            left: 50%;
+            margin-left: -7px;
+            top: 29.5px;
+            width: 0;
+            height: 0;
+            border-top: ;
+            border-top: 8px solid red;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent
+        } */
+                /* 下拉菜单 */
+                #navbar .container .abc{
+                    display: flex;
+                    padding-right: 20px;
+                    font-weight: 600;
+                    color: #aaa;
+                    
+                }
+                #navbar .container .abc .borderxia{
+                    
+                    border-bottom:3px solid gray;
+                    box-shadow: 0px 3px 1px lightgray;
+                }
+                
+            #navbar .container .abc .download{
+            /* 相对定位 */
+            position: absolute;
+            width: 610px;
+            height: 0px;
+            /*移到nav */
+            top: 65px;
+            left: 50%;
+            /* 没有使用居中2边各占一点 */
+            margin-left: -190px;
+            background-color: rgba(245, 245, 245, 0.4);
+            box-shadow: 0 1px 5px #aaa;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            transition: all .5s;
+        }
+        #navbar .container ul .abc:hover>.download{
+            margin-top: 10px;
+            height: 422px;
+            width: 610px;
+            /* padding: px; */
+        }
+        #navbar .container .abc .download .channel-column{
+            /* list-style: none; */
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            border-right: 2px solid #d3d3d3;
+            /* padding: 0 16px; */
+            /* align-items: center;  */
+            /* flex-shrink:0; */
+        }
+        #navbar .container .abc .download .channel-box .channel-column  .channel-item{
+          display: flex;
+          flex-wrap: wrap;
+           /* justify-content: center; */
+          align-items: center; 
+          margin: 3px 0px;
+          padding: 6px;
+          height: 32px;
+          line-height: 20px;
+          border-radius: 4px;
+          color: black;
+          font-weight: 600;
+          font-family:cursive;
+          /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+          font-size: 12px;
+          /* width: 119px; */
+          /* box-sizing: border-box; */
+          /* text-align: center; */
+          text-decoration: none;
+          cursor: pointer;
+          transition: background .6s;
+        }
+        #navbar .container .abc .download .channel-box .channel-column  .channel-item:hover{
+            background-color: #aaa;
+        }
+        /* #navbar .container .abc .download .channel-box .channel-column  a{
 
+            color: red;
+            text-decoration: none;
+        } */
+        #navbar .container .abc .download .channel-box{
+            padding: 16px 0;
+            display: flex;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +146,61 @@
             <!-- current当前的 当进入页面的效果跳板 -->
             <h1><a href="index.html">乐高玩具有限公司</a></h1>
             <ul>
-                <li><a  class="current"  href="index.html">首页</a></li>
+                <li class="abc" ><a href="">下拉菜单
+                    <div class="borderxia"></div>
+                </a>
+                    <div class="download">
+                        <div class="channel-box">
+                            <div class="channel-column">
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>番剧</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>电影</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>国创</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>电视剧</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>综艺</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>纪录片</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>动画</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>游戏</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>鬼畜</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>音乐</a>
+                                
+                            </div>
+                            <div class="channel-column">
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                
+                            </div>
+                            <div class="channel-column">
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                            
+                                
+                            </div>
+                            <div class="channel-column">
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                                <a href="" class="channel-item"><i class="iconfont icon-gerenzhongxin"></i>商城</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="current"  href="index.html">首页面</a></li>
                 <li><a href="about.html">关于我们</a></li>
                 <li><a href="contact.html">联系我们</a></li>
                 <li><a class="text-flex" href="flex1.html">跳转flex页面项目</a></li>
@@ -33,9 +212,21 @@
                     <div class="showcase-content">
                         <h1>欢迎来到<span class="text-primary">上进群</span></h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nemo perspiciatis nostrum placeat eos ab, repellat beatae quis recusandae amet.</p>
-                        <a class="btn" href="https://jq.qq.com/?_wv=1027&k=5873Ce8b">点击加入</a>            
+                        <a class="btn" target="_blank" href="https://jq.qq.com/?_wv=1027&k=5873Ce8b">点击加入</a>            
                     </div>
             </div>
+            <div class="nav-menu">
+                <a href="">
+                    <div class="issue"><a href=""></a>新版反馈</a></div>
+                </a>
+                <div class="issue2"><a href="/flex1.html">跳转项目</a></div>
+                <div class="issue2"><a href="">暂无作用</a></div>
+                <div class="issue2"><a href="点击链接加入群聊【前端群】：https://jq.qq.com/?_wv=1027&k=FLaHSsaZ">前端交流</a></div>
+                <div class="issue2"><a target="_blank" href="https://www.bilibili.com/">跳转B站</a></div>
+                <div class="issue2"><a href="">跳转项目</a>
+                </div>
+            </div>
+            
         </div>
     </header>
     <!-- 章节部分 -->
@@ -62,17 +253,29 @@
         <div class="box bg-light">
             <i class="fa fa-volume-down fa-3x" aria-hidden="true"></i>
             <h3>作者自言</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Quia,accusantium</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias incidunt quam provident consectetur dolores</p>
         </div>
         <div class="box bg-yellow">
             <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-            <h3 style="font-size:30px;color:white;"><a style="color:white;" href="https://github.com/Kai123321321321/kai123321321321.github.io">Github</a></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Quia,accusantium</p>
+            <h3 class="text-a" style="font-size:30px;"><a class="text-a" href="https://github.com/Kai123321321321/kai123321321321.github.io">Github</a>
+                
+            </h3>  
+                
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque! Quos porro laboriosam officiis natus ratione vero quasi laborum reprehenderi</p>
         </div>
-        <div class="box bg-light">
+        <div class="box bg-light wxbox">
             <i class="fa fa-weixin fa-3x" aria-hidden="true"></i>
-            <h3><a href=""></a>个人微信</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Quia,accusantium</p>
+            <br>
+            <h3><a href=""></a>个人微信
+                <div class="border1"></div>
+                <!-- 三角形triangle -->
+                <!-- <div class="triangle"></div> -->
+                <div class="wximg">
+                    <img src="/img/download.png" alt="">
+                    <p></p>
+                </div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt numquam quas? Maiores numquam neque error, eos dolor unde totam!</p>
         </div> 
     </section>
     <div class="clr"></div>
@@ -80,5 +283,9 @@
         <p>AFC-Kainb&copy; 2022,Come on in the days to come
         </p>
     </footer>
+    <!-- sidebar -->
+    <section class="sidebar">
+        
+    </section>
 </body>
 </html>
