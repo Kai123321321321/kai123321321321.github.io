@@ -1,6 +1,5 @@
 /* BILI二级菜单*/
-#navbar .container .bili-header{
-}
+/*  */
 #navbar .container .bili-li ul li{
 display: flex;
 flex-direction: column;
@@ -109,7 +108,9 @@ audio{
     background-color: rgba(105, 105, 105,0.9);
     color: #f7c08a;
 }
-#navbar ul li a.current1{}
+/* #navbar ul li a.current1{
+
+} */
 /* showcase主观部分陈列 */
 #showcase{
     background: url(/img/showcase.jpg) no-repeat center center/cover;
@@ -162,7 +163,7 @@ audio{
 .text-a:hover{
     color: #444;
 }
-/* features */
+/*featires */
 #featires h3 a{
     transition: all 1s;
 }
@@ -206,8 +207,11 @@ audio{
     font-weight: 700;
 }
 /* 特点部分下三栏 */
+#features{
+    display: flex;
+    justify-content: space-around;
+}
 .box{
-    float: left;
     width: 33.3%;
     padding: 50px;
     text-align: center;
