@@ -141,6 +141,7 @@
     </style>
 </head>
 <body>
+    
     <header>
         <nav id="navbar">
         <div class="container">
@@ -295,3 +296,14 @@
     </section>
 </body>
 </html>
+<script>
+    var btnEl = document.querySelectorAll('.btn')
+    for (var i = 0; i < btnEl.length; i++) {
+        var btn = btnEl[i];
+        (function(m){
+            btn.onclick = function() {
+                alert('在另一个网页跳转qq群')
+            }
+        })()
+}
+</script>
