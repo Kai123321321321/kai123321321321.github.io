@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:#334756;
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.acolor{
+    color: #b7c4cf;
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #282928 0%, #333132);
+    /* opacity: 1; */
+}
+.card {
+    width: 700px;
+    height: 300px;
+    background-color: #f5efe6;
+    color: #334756;
+    box-shadow: 0px 0px 22px 5px rgb(237,237,237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5em;
+    font-family: '楷体';
+    position: relative;
+    /* 使盒子3D并且具备透明效果 */
+    transform-style:preserve-3d;
+    transform: perspective(900px) rotateX(23deg);
+    opacity: 0.8;
+    /* flex */
+}
+.card::after,
+.card::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    color: #b7c4cf;
+    font-size: 40px;
+    position:absolute;
+    font-family: '华文行楷';
+    opacity: 0.5;
+}
+.card::before {
+    content: '鼠标放上';
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 2s;
+    transform-origin: left;
+}
+.card::after {
+    content: '跳转页面';
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform-origin: right;
+    transition: 2s;
+}
+
+.card .content:hover .bg{
+    display: none;
+}
+.card:hover::before{
+    transform: rotateY(-180deg);
+}
+.card:hover::after{
+    transform: rotateY(180deg);
+}
+.content{
+    opacity: 0;
+    transition: 2s;
+}
+.card:hover .content{
+    opacity: 1;
+}
+/* 信封页面结束 */
+.bg1 {
+    width: 100vw;
+    height: 100vh;
+    background:url(/1066910.png)no-repeat center center/cover;
+}
+.bg1 .nav{
+    height: 60px;
+    background-color: rgba(65,65,65 , 0.7);
+}
+.bg1 .nav .navcenter{
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 60px;
+    list-style: none;
+}
+.bg1 .nav .navcenter a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    text-shadow: 0 0 2px lightgray;
+    font-weight: 550;
+    padding: 10px 30px;
+    transition: all .5s;
+
+}
+.bg1 .nav .navcenter a:hover{
+    background-color: #d9afd9;
+    border-radius: 18px;
+}

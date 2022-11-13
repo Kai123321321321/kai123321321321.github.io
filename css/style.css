@@ -4,7 +4,7 @@ display: flex;
 flex-direction: column;
 height: 10px;
 color: red;
-}
+}   
 /* reset */
 *{
     margin: 0;
@@ -32,6 +32,7 @@ p{
     max-width: 1300px;
     overflow:hidden;
     padding: 0 20px;
+    
 }
 #navbar .container h1 a{
     background: linear-gradient(to right, #90F7EC,#32CCBC);
@@ -196,9 +197,6 @@ audio{
     opacity: 0;
     transition: all .3s;
 }
-#home-info .info-img .mask .mask-text{
-    margin-bottom: 100px;
-}
 #home-info .info-img .mask p{
     text-align: center;
     font-weight: 600;
@@ -206,6 +204,7 @@ audio{
 }
 #home-info .info-img:hover .mask{
     opacity: 1;
+    
 }
 #home-info .info-img h2{
     padding: 50px 30px;
@@ -313,6 +312,10 @@ audio{
 }
 /* About结束 */
 /* contact开始*/
+#contact-from{
+    background: url(/img/showcase.jpg);
+    height: 100vh;
+}
 #contact-from .form-group{
     margin-bottom: 20px;
 }
@@ -324,6 +327,7 @@ audio{
 /* 整体 */
 #contact-from textarea{
     width: 100%;
+
     padding: 10px;
     border: 1px solid #ddd;
 }
