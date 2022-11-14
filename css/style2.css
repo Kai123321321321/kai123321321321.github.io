@@ -9,7 +9,11 @@ html{
 }
 a{
     text-decoration: none;
-    color:#334756;
+    /* color:#334756; */
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 550;
 }
 body{
     overflow-y: hidden;
@@ -19,122 +23,363 @@ body{
 .acolor{
     color: #b7c4cf;
 }
+/* 首页 */
 .bg {
     width: 100vw;
-    height: 1080px;
-    position: relative;
+    height: 100vh;
+    background:url(/img/valorantbg.png) no-repeat center center/cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #d9afd9;
-    background-image: linear-gradient(0deg, #282928 0%, #333132);
-    /* opacity: 1; */
 }
-.card {
-    width: 700px;
-    height: 300px;
-    background-color: #f5efe6;
-    color: #334756;
-    box-shadow: 0px 0px 22px 5px rgb(237,237,237);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 2.5em;
-    font-family: '楷体';
-    position: relative;
-    /* 使盒子3D并且具备透明效果 */
-    transform-style:preserve-3d;
-    transform: perspective(900px) rotateX(23deg);
-    opacity: 0.8;
-    /* flex */
-}
-.card::after,
-.card::before{
-    content: '';
-    width: 50%;
-    height: 100%;
-    color: #b7c4cf;
-    font-size: 40px;
-    position:absolute;
-    font-family: '华文行楷';
-    opacity: 0.5;
-}
-.card::before {
-    content: '鼠标放上';
-    left: 0;
-    top: 0;
-    display: flex;
+.bg .sidebar {
+    width: 300px;
+    /* background-color: red; */
+    height: 100vh;
     justify-content: flex-end;
-    align-items: center;
-    transition: 2s;
-    transform-origin: left;
+    margin-left:auto;
+    /* border-left: rgba(158, 157, 157, 0.596) solid 0.5px; */
+    /* box-shadow: 0 0 1px white; */
 }
-.card::after {
-    content: '跳转页面';
-    right: 0;
-    top: 0;
+.bg .sidebar ul {
+    list-style: none;
+    width: 120px;
+    height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
-    transform-origin: right;
-    transition: 2s;
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 550;
+    transition: all .5s;
 }
+.bg .sidebar ul a:hover{
+    text-shadow: 0 0 3px lightgray;
+    color: white;
+    transition: all .5s;
 
-.card .content:hover .bg{
-    display: none;
 }
-.card:hover::before{
-    transform: rotateY(-180deg);
+.bg .sidebar ul li{
+    text-align: center;
 }
-.card:hover::after{
-    transform: rotateY(180deg);
+.bg .sidebar ul .lipadding {
+    padding: 20px 0px;
 }
-.content{
-    opacity: 0;
-    transition: 2s;
-}
-.card:hover .content{
-    opacity: 1;
+.bg .sidebar ul .iconpadding {
+    padding: 100px 0px;
 }
 /* 信封页面结束 */
+/* ZSQ页面开始 */
 .bg1 {
     width: 100vw;
     height: 100vh;
-    background:url(/viper.jpg)no-repeat center center/cover;
-    opacity: 0.9;
-}
-
-.bg1 .nav{
-    height: 60px;
-    background-color: rgba(86, 99, 91, 0.322);
-    z-index: 100;
-}
-.bg1 .nav .navcenter{
-    margin: 0 auto;
-    width: 800px;
+    background:url(/viper.jpg) no-repeat center center/cover;
     display: flex;
-    justify-content: space-between;
+}
+.bg1 .sidebar {
+    width: 300px;
+    /* background-color: red; */
+    height: 100vh;
+    justify-content: flex-end;
+    margin-left:auto;
+    /* border-left: rgba(158, 157, 157, 0.596) solid 0.5px; */
+    /* box-shadow: 0 0 1px white; */
+}
+.bg1 .sidebar ul {
+    list-style: none;
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    line-height: 60px;
-    list-style: none;
-}
-.bg1 .nav .navcenter a{
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    text-shadow: 0 0 2px lightgray;
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
     font-weight: 550;
-    padding: 10px 30px;
     transition: all .5s;
-    border-radius: 18px;
 }
-.bg1 .nav .navcenter a:hover{
-    background-color: #d9afd9;
+.bg1 .sidebar ul a:hover{
+    text-shadow: 0 0 3px lightgray;
+    color: white;
+    transition: all .5s;
+
 }
-.bg1 .main .zsq{
-   position: absolute;
-   left: 900px;
-   top: 1170px;
-   border-radius: 50%;
+.bg1 .sidebar ul li{
+    text-align: center;
+}
+.bg1 .sidebar ul .lipadding {
+    padding: 20px 0px;
+}
+.bg1 .sidebar ul .iconpadding {
+    padding: 100px 0px;
+}
+.bg1 .main-text {
+    /* border: 1px solid red; */
+    color: white;
+    height: 200px;
+    margin: auto 0;
+    margin-left: 420px;
+    /* display: flex; */
+    /* margin-left: 440px;
+    margin-top: 370px; */
+}
+.bg1 .main-text h1,p{
+    text-align: center;
+}
+/* Kai开始 */
+.bg2 {
+    width: 100vw;
+    height: 100vh;
+    background:url(/img/1149777.jpg) no-repeat center center/cover;
+    display: flex;
+}
+.bg2 .sidebar {
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+.bg2 .sidebar ul {
+    list-style: none;
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 550;
+    transition: all .5s;
+}
+.bg2 .sidebar ul a:hover{
+    text-shadow: 0 0 3px lightgray;
+    color: white;
+    transition: all .5s;
+
+}
+.bg2 .sidebar ul li{
+    text-align: center;
+}
+.bg2 .sidebar ul .lipadding {
+    padding: 20px 0px;
+}
+.bg2 .sidebar ul .iconpadding {
+    padding: 100px 0px;
+}
+.bg2 .main-text {
+    color: white;
+    height: 200px;
+    margin: auto 0;
+    margin-left: 420px;
+
+}
+.bg2 .main-text h1,p{
+    text-align: center;
+}
+/* kai结束 */
+/* 2k开始 */
+.bg3 {
+    width: 100vw;
+    height: 100vh;
+    background:url(/img/1102037.jpg) no-repeat center center/cover;
+    display: flex;
+}
+.bg3 .sidebar {
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+.bg3 .sidebar ul {
+    list-style: none;
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 550;
+    transition: all .5s;
+}
+.bg3 .sidebar ul a:hover{
+    text-shadow: 0 0 3px lightgray;
+    color: white;
+    transition: all .5s;
+
+}
+.bg3 .sidebar ul li{
+    text-align: center;
+}
+.bg3 .sidebar ul .lipadding {
+    padding: 20px 0px;
+}
+.bg3 .sidebar ul .iconpadding {
+    padding: 100px 0px;
+}
+.bg3 .main-text {
+    color: white;
+    height: 200px;
+    margin: auto 0;
+    margin-left: 420px;
+
+}
+.bg3 .main-text h1,p{
+    text-align: center;
+}
+/* 2k结束 */
+/* Hanli开始 */
+.bg4 {
+    width: 100vw;
+    height: 100vh;
+    background:url(/img/1086710.png) no-repeat center center/cover;
+    display: flex;
+}
+.bg4 .sidebar {
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+.bg4 .sidebar ul {
+    list-style: none;
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 550;
+    transition: all .5s;
+}
+.bg4 .sidebar ul a:hover{
+    text-shadow: 0 0 3px lightgray;
+    color: white;
+    transition: all .5s;
+
+}
+.bg4 .sidebar ul li{
+    text-align: center;
+}
+.bg4 .sidebar ul .lipadding {
+    padding: 20px 0px;
+}
+.bg4 .sidebar ul .iconpadding {
+    padding: 100px 0px;
+}
+.bg4 .main-text {
+    color: white;
+    height: 200px;
+    margin: auto 0;
+    margin-left: 420px;
+
+}
+.bg4 .main-text h1,p{
+    text-align: center;
+}
+/* Hanli结束 */
+/* lonyi开始 */
+.bg5 {
+    width: 100vw;
+    height: 100vh;
+    background:url(/img/1149389.jpg) no-repeat center center/cover;
+    display: flex;
+}
+.bg5 .sidebar {
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+.bg5 .sidebar ul {
+    list-style: none;
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 550;
+    transition: all .5s;
+}
+.bg5 .sidebar ul a:hover{
+    text-shadow: 0 0 3px lightgray;
+    color: white;
+    transition: all .5s;
+
+}
+.bg5 .sidebar ul li{
+    text-align: center;
+}
+.bg5 .sidebar ul .lipadding {
+    padding: 20px 0px;
+}
+.bg5 .sidebar ul .iconpadding {
+    padding: 100px 0px;
+}
+.bg5 .main-text {
+    color: white;
+    height: 200px;
+    margin: auto 0;
+    margin-left: 420px;
+
+}
+.bg5 .main-text h1,p{
+    text-align: center;
+}
+/* Lon yi页面结束 */
+.bg6 {
+    width: 100vw;
+    height: 100vh;
+    background:url(/img/1237510.jpg) no-repeat center center/cover;
+    display: flex;
+}
+.bg6 .sidebar {
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+.bg6 .sidebar ul {
+    list-style: none;
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 楷体;
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: 550;
+    transition: all .5s;
+}
+.bg6 .sidebar ul a:hover{
+    text-shadow: 0 0 3px lightgray;
+    color: white;
+    transition: all .5s;
+
+}
+.bg6 .sidebar ul li{
+    text-align: center;
+}
+.bg6 .sidebar ul .lipadding {
+    padding: 20px 0px;
+}
+.bg6 .sidebar ul .iconpadding {
+    padding: 100px 0px;
+}
+.bg6 .main-text {
+    color: white;
+    height: 200px;
+    margin: auto 0;
+    margin-left: 420px;
+
+}
+.bg6 .main-text h1,p{
+    text-align: center;
 }
