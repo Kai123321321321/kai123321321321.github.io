@@ -5,6 +5,7 @@ html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -20,7 +21,7 @@ body{
 }
 .bg {
     width: 100vw;
-    height: 100vh;
+    height: 1080px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -100,12 +101,14 @@ body{
 .bg1 {
     width: 100vw;
     height: 100vh;
-    background:url(/1066910.png)no-repeat center center/cover;
-    opacity: 0.8;
+    background:url(/viper.jpg)no-repeat center center/cover;
+    opacity: 0.9;
 }
+
 .bg1 .nav{
     height: 60px;
-    background-color: rgba(65,65,65 , 0.7);
+    background-color: rgba(86, 99, 91, 0.322);
+    z-index: 100;
 }
 .bg1 .nav .navcenter{
     margin: 0 auto;
@@ -128,4 +131,10 @@ body{
 }
 .bg1 .nav .navcenter a:hover{
     background-color: #d9afd9;
+}
+.bg1 .main .zsq{
+   position: absolute;
+   left: 900px;
+   top: 1170px;
+   border-radius: 50%;
 }
